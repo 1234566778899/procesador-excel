@@ -1,0 +1,106 @@
+.btn-select {
+    background-color: black;
+    padding: 7px 15px;
+    border: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-select:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.btn-select input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.file-item {
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 300px;
+    border: 1px solid rgb(176, 176, 176);
+    background-color: rgb(237, 237, 237);
+}
+
+.tabla {
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.tabla thead {
+    border-bottom: 1px solid black;
+}
+
+.tabla tr {
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.celda {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px 0px;
+}
+
+.screen-load {
+    animation: opacar 2s infinite;
+}
+
+.screen-load .head {
+    height: 30px;
+    background-color: #E4E4E4;
+    border-radius: 5px;
+}
+
+.screen-load .body {
+    margin-top: 10px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #E4E4E4;
+
+}
+
+@keyframes opacar {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.hojas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hoja {
+    padding: 10px 20px;
+    background-color: #EDEDED;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.hoja:hover {
+    background-color: #c7c7c7;
+}
+
+.hoja-activa {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #c7c7c7;
+}
