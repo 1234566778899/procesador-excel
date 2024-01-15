@@ -40,6 +40,7 @@ export const HomeApp = () => {
     const handleDataProcess = useCallback((processFunction) => {
         try {
             const processedData = processFunction(datos);
+            if (processedData == -1) return
             downloadFile(processedData);
         } catch (error) {
             console.error("Error al procesar los datos:", error);

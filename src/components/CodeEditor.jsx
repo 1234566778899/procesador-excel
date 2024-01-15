@@ -36,7 +36,7 @@ export const CodeEditor = ({ onDataProcess }) => {
                 }}
                 style={{ height: '400px', width: '100%' }}
             />
-            <button className='btn-select mt-3' onClick={handleExecute}>Exportar Excel <i class="fa-solid fa-download ms-2"></i></button>
+            <button className='btn-select mt-3' onClick={handleExecute}>Exportar Excel <i className="fa-solid fa-download ms-2"></i></button>
         </div>
     );
 };
